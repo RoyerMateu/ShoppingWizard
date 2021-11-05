@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <title>PURE WATER</title>
+</head>
+<body>
+    <header>
+    <nav class="nav">
+        <div class="navigation container">
+            <div class="logo">
+                <img src="assets/img/logo/logo.png">
+            </div>
+            <div class="menu">
+                <div class="top-nav">
+                    <div class="logo">
+                        <h1>Pure WATER</h1>
+                    </div>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+                <ul class="nav-list">
+                    <li class="tab is-active">
+                        <a class="nav-link" data-switcher data-tab="1">Pure Water</a>
+                    </li>
+                    <li class="tab">
+                        <a class="nav-link" data-switcher data-tab="2">Animal Kingdom</a>
+                    </li>
+                    <li class="tab">
+                        <a class="nav-link" data-switcher data-tab="3">Magnetic</a>
+                    </li>
+                    <li class="tab">
+                        <a class="nav-link" data-switcher data-tab="4">Portable</a>
+                    </li>
+                    <li class="tab">
+                        <a class="nav-link" data-switcher data-tab="5">Smooth</a>
+                    </li>
+                    <li>
+                    <a class="nav-link icon"><i class="bx bx-shopping-bag" onclick="appearGift2()"></i></a>
+                        <div id="shopcart">
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content"></div>
+                                <button>BUY ALL</button>
+                            </div></div>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="pages">
+        <div class="page is-active" data-page="1">
+            <section id="pure-water">
+                <div class="imgmain" style="text-align: center;"><img src="assets/img/logo/logo blanco.png"></div>
+                <p class="maintxt1" text-align: center;>the sensation of pure and fresh water at every moment in your mouth</p>
+                <br>
+                <p class="maintxt2">At pure water we believe that the quality of our products must be the same as the water we drink</p>
+                <div class="flex-row-container">
+                    <div class="flex-row-item">ANIMAL KINGDOM</div>
+                    <div class="flex-row-item">PORTABLE CUP</div>
+                    <div class="flex-row-item">SMOOTH</div>
+                    <div class="flex-row-item"><img src="assets/img/mainpage/scrnli_4_11_2021 18-32-56.png"></div>
+                    <div class="flex-row-item"><img src="assets/img/mainpage/scrnli_4_11_2021 23-12-36.png"></div>
+                    <div class="flex-row-item"><img src="assets/img/mainpage/scrnli_4_11_2021 18-34-16.png"></div>
+                    <div class="flex-row-item">Simple & Colorful perfect for kids</div>
+                    <div class="flex-row-item">Suitable for cold water, smoothie, juice...WHATEVER</div>
+                    <div class="flex-row-item">Sophisticated and elegant perfect for work</div>
+                    <div class="flex-row-item"><button class="mainbttn" onclick="location.href='[class=nav-link data-switcher data-tab=2]'">CREATE</button></div>
+                    <div class="flex-row-item"><button class="mainbttn" onclick="location.href='[class=nav-link data-switcher data-tab=4]'">EXPLORE</button></div>
+                    <div class="flex-row-item"><button class="mainbttn" onclick="location.href='[class=nav-link data-switcher data-tab=5]'">DISCOVER</button></div>
+                </div>
+            </section>
+        </div>
+        <div class="page buy-page">
+            <div id=cssdivtime>
+                <div id="divexemple" style="visibility: hidden;">Registration proces closes in 05:00 minutes
+                </div>
+                <div id="divexemple2" style="visibility: hidden;">Registration proces closes in 04:00 minutes
+                </div>
+                <div id="divexemple3" style="visibility: hidden;">Registration proces closes in 03:00 minutes
+                </div>
+                <div id="divexemple4" style="visibility: hidden;">Registration proces closes in 02:00 minutes
+                </div>
+                <div id="divexemple5" style="visibility: hidden;">Registration proces closes in 01:00 minutes
+                </div>
+                <div id="divexemple6" style="visibility: hidden;">Time is over. Redirecting to the Main Page
+                </div>
+            </div>
+            <!-- circulos -->
+            <div class="contenedor" id="accountbody">
+                <div class="progreso-contenedor tabsy">
+                    <div class="circulo active taby">1</div>
+                    <div class="circulo taby">2</div>
+                    <div class="circulo taby">3</div>
+                    <div class="circulo taby">4</div>
+                </div>
+            </div>
+            <!-- secciones -->
+            <section class="accountbody tabby is-active">
+                <div class="container324 pagey is-active" data-pagey="1">
+                    <div class="headeraccount">
+                        <h2>Create Account</h2>
+                    </div>
+                    <form id="form" class="form">
+                        <div class="form-control">
+                            <label for="username">Username</label>
+                            <input type="text" placeholder="" id="username" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="username">Email</label>
+                            <input type="email" placeholder="" id="email" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="username">Password</label>
+                            <input type="password" placeholder="Password" id="password"/>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="username">Password check</label>
+                            <input type="password" placeholder="Password two" id="password2"/>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </section>
+            <section class="address tabby">
+                <div class="pagey" data-pagey="2">
+                    <div class="container324">
+                        <div class="headeraccount">
+                            <h2>Address</h2>
+                        </div>
+                    <form class="form">
+                        <div class="form-control">
+                            <label for="firstname">First Name</label>
+                            <input type="text" placeholder="" id="firstname" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="username">Last Name</label>
+                            <input type="lastname" placeholder="" id="lastname" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="username">Address </label>
+                            <input type="address" placeholder="address" id="address"/>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <b>This is not my current address. Please send it to another</b>
+                        <input type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()" />
+                        <div id="content" style="display: none;">
+                            <div class="form-control">
+                                <label for="username"><br>
+                                    Shipping address</label>
+                                <input type="address" placeholder="address" id="shipping-address"/>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div><br>
+                        </div>
+                        <div class="form-control">
+                            <label for="Date of Birth">
+                                Birthday:
+                                <input type="date" name="date">
+                            </label>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="postalcode">Address </label>
+                            <input type="address" placeholder="postalcode" id="postalcode"/>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div>
+                            Country:
+                            <SELECT NAME="list" id="list">
+                                <OPTION>Andorra</OPTION>
+                                <OPTION>España</OPTION>
+                                <OPTION>Francia</OPTION>
+                                <OPTION>Alemania</OPTION>
+                                <OPTION>Grecia</OPTION>
+                            </SELECT>
+                            <input type="tel" id="txtbox" name="phone" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </section>
+            <section class="shipping tabby">
+                <div class="pagey" data-pagey="3">
+                    <section id="shipping-main">
+                        <h1 class="shippingformform">
+                            Shipping
+                        </h1>
+                        <form class="form">
+                        <h2>
+                            Shipping type
+                        </h2>
+                        <form action="">
+                            <input type="radio" value="free" name="shipment" onclick="appearPremium(0)">
+                            <label for="free">Free shipment (72H)</label><br>
+                            <input type="radio" value="extra" name="shipment" onclick="appearPremium(1)">
+                            <label for="extra">Extra shipping (48H) <span>4,99€</span></label><br>
+                            <input id="input-premium"type="radio" value="premium" name="shipment" onclick="appearPremium(2)">
+                            <label for="premium">Premium (24H) <span>9,99€</span></label><br>
+                        </form>
+                    <div id="appears-premium">
+                        <h3 id="premium-h3">Your order will arrive:
+                        </h3>
+                        <h4 id="premium-h4">Estimate Delivery Date:
+                        </h4>
+                        <p class="premium-p"></br>
+                        </p>
+                    </div>
+                    <div class="divcheckbox">
+                        <input type="checkbox" onclick="appearGift()" id="check-gift">
+                        <label for="gift">Is it a gift?</label><br>
+                    <div id="appears-gift">
+                        <label for="gift msg">Gift message</label><br>
+                        <textarea name="gift" id="text-gift" cols="25" rows="8"></textarea><br>
+                        <label for="gift img">Gift wrapper image</label><br>
+                        <input type="file" name="photo-wrapper" id="photo-wrapper"></div>
+                    </div>
+                        </form>
+                    </section>
+                </div>
+            </section>
+            <section class="finish tabby">
+                <div class="pagey" data-pagey="4">
+                    <article id="main-final">
+                        <section id="buy-complete">
+                            <h1>
+                                Your purchase
+                            </h1>
+                            <form id="form-buy" name="formTerms" onsubmit="return validationR()">
+                                <input type="checkbox" id="termsconditions" value="Termsconditions">
+                                <label for=""> I have read and I accept the terms and conditions</label><br>
+                            </form>
+                            <button id="buy-button" onclick="return validationR()">Buy Now</button>
+                            <p id="accept-terms"></p>
+                        </section>
+                        <div>
+                        <section class="order-complete">
+                            <h1>
+                                Your order
+                            </h1>
+                            <div id="your-order" class="border-bot">
+                            </div>
+                            <h2 id="total-final">
+                            </h2>
+                        </section>
+                    <section id="order-complete2">
+                        <h1 id="h1ordered">
+                            Waiting for your buy
+                        </h1>
+                        <h2 class="border-bot" id="h2ordered"></h2>
+                        <h2 id="h22ordered"></h2>
+                    </section>
+                    <button id="return-button" onclick="goMain()">
+                        Main Page
+                    </button>
+                    </article>
+                </div>
+            </section>
+            <div class="btnPrevNext">
+                <button class="btn" id="anterior" disabled>Anterior</button>
+                <button class="btn" id="siguiente">Siguiente</button>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer class="footer-container">
+        <div class="footer_link-list">
+            <span>Compras</span>
+            <ul>
+                <li>Cómo comprar</li>
+                <li>Formas de pago</li>
+                <li>Gastos de envío</li>
+                <li>Preguntas frecuentes</li>
+                <li>Opiniones de clientes</li>
+            </ul>
+        </div>
+        <div class="footer_link-list">
+            <span>Quiénes somos</span>
+            <ul>
+                <li>Quiénes somos</li>
+                <li>Afiliados</li>
+                <li>Proveedores</li>
+                <li>Aviso legal</li>
+                <li>Privacidad</li>
+            </ul>
+        </div>
+        <div class="footer_link-list">
+            <span>Contactar</span>
+            <ul>
+                <li>Centro de soporte</li>
+                <li>Contacto</li>
+                <li>Devoluciones y Garantías</li>
+                <li>Publicidad</li>
+                <li>Trabaja con nosotros</li>
+                <li>Política de cookies</li>
+            </ul>
+        </div>
+        <div class="footer_link-list">
+            <span>Comunidad</span>
+            <ul>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>TikTok</li>
+                <li>YouTube</li>
+                <li>Twitch</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
